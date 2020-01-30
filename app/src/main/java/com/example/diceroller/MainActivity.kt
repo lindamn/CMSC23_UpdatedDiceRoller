@@ -13,9 +13,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener{rollDice()}
+        val countUp: Button = findViewById(R.id.count_up)
+        countUp.setOnClickListener{countUp()}
     }
 
+    private fun countUp(){
+        val resultText: TextView = findViewById(R.id.result_text)
 
+        if(resultText.text == "Hello World!"){
+            resultText.text = "1"
+        }else{
+            var temp = resultText.text.toString().toInt()
+
+            if(temp <6){
+                temp += 1
+                resultText.text = temp.toString()
+            }
+        }
+    }
 
     private fun rollDice(){
         val randomInt = (1..6).random()
