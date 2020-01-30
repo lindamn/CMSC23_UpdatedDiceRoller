@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         }else{
             var temp = resultText.text.toString().toInt()
 
-            if(temp <6){
+            if(temp < 6){
                 temp += 1
                 resultText.text = temp.toString()
             }
