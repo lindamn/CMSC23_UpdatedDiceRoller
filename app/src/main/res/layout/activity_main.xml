@@ -9,13 +9,21 @@
     android:orientation="vertical"
     android:layout_gravity="center_vertical">
 
-    <TextView
+<!--    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:layout_gravity="center_horizontal"
         android:textSize="30sp"
-        android:id="@+id/result_text"/>
+        android:id="@+id/result_text"/>-->
+
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -24,11 +32,11 @@
         android:layout_gravity="center_horizontal"
         android:id="@+id/roll_button"/>
 
-    <Button
+<!--    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Count Up"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/count_up"/>
+        android:id="@+id/count_up"/>-->
 
 </LinearLayout>
